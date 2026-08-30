@@ -1,4 +1,4 @@
-# 🍔 垮界好食 - Full-Stack Next.js Meal Sharing Platform
+# 🍔 跨界好食 - Full-Stack Next.js Meal Sharing Platform
 
 跨界好食 是一個基於 **Next.js 15 App Router** 架構開發的全端美食分享平台。使用者可以瀏覽社群分享的美味料理、查看詳細食譜，並透過整合 **AWS S3** 雲端儲存與 **SQLite** 資料庫上傳與分享自訂的料理內容。
 
