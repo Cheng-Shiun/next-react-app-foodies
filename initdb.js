@@ -5,7 +5,7 @@ const dummyMeals = [
   {
     title: "多汁起司漢堡",
     slug: "juicy-cheese-burger",
-    image: "/images/burger.jpg",
+    image: "burger.jpg",
     summary: "令人垂涎欲滴的多汁牛肉漢堡，搭配融化的起司與鬆軟漢堡麵包。",
     instructions: `
       1. 準備漢堡排：
@@ -27,7 +27,7 @@ const dummyMeals = [
   {
     title: "香辣咖哩",
     slug: "spicy-curry",
-    image: "/images/curry.jpg",
+    image: "curry.jpg",
     summary: "濃郁香辣的咖哩，融合異國香料與香濃椰奶，風味十足。",
     instructions: `
       1. 切好蔬菜：
@@ -52,7 +52,7 @@ const dummyMeals = [
   {
     title: "手工水餃",
     slug: "homemade-dumplings",
-    image: "/images/dumplings.jpg",
+    image: "dumplings.jpg",
     summary: "以鮮香肉餡與蔬菜製成的手工水餃，蒸至外皮柔嫩、內餡鮮美。",
     instructions: `
       1. 準備餡料：
@@ -74,7 +74,7 @@ const dummyMeals = [
   {
     title: "經典起司通心粉",
     slug: "classic-mac-n-cheese",
-    image: "/images/macncheese.jpg",
+    image: "macncheese.jpg",
     summary: "濃郁滑順的起司通心粉，是令人感到溫暖滿足的經典美食。",
     instructions: `
       1. 煮通心粉：
@@ -99,7 +99,7 @@ const dummyMeals = [
   {
     title: "道地披薩",
     slug: "authentic-pizza",
-    image: "/images/pizza.jpg",
+    image: "pizza.jpg",
     summary: "手工甩製的披薩，搭配酸香番茄醬、新鮮配料與融化起司，呈現經典美味。",
     instructions: `
       1. 準備麵團：
@@ -121,7 +121,7 @@ const dummyMeals = [
   {
     title: "維也納炸肉排",
     slug: "wiener-schnitzel",
-    image: "/images/schnitzel.jpg",
+    image: "schnitzel.jpg",
     summary: "外皮酥脆、色澤金黃的經典奧地利炸小牛肉排。",
     instructions: `
       1. 準備小牛肉：
@@ -143,7 +143,7 @@ const dummyMeals = [
   {
     title: "新鮮番茄沙拉",
     slug: "fresh-tomato-salad",
-    image: "/images/tomato-salad.jpg",
+    image: "tomato-salad.jpg",
     summary: "清爽開胃的番茄沙拉，搭配成熟番茄、新鮮羅勒與酸香油醋醬。",
     instructions: `
       1. 準備番茄：

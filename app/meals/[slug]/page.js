@@ -1,7 +1,7 @@
 import { getMeal } from "@/lib/meals";
 import Image from "next/image";
-import classes from "./page.module.css";
 import { notFound } from "next/navigation";
+import classes from "./page.module.css";
 
 export default async function MealDetailsPage({ params }) {
   const { slug } = await params;
@@ -16,7 +16,7 @@ export default async function MealDetailsPage({ params }) {
     <>
       <header className={classes.header}>
         <div className={classes.image}>
-          <Image src={meal.image} alt={meal.title} fill />
+          <Image src={`https://torson-next-app-foodies-images.s3.ap-southeast-1.amazonaws.com/${meal.image}`} alt={meal.title} fill />
         </div>
         <div className={classes.headerText}>
           <h1>{meal.title}</h1>

@@ -1,7 +1,14 @@
+"use client";
+
+import MealFormSubmission from "@/components/meals/form-submission";
 import ImagePicker from "@/components/meals/image-picker";
+import { shareMeal } from "@/lib/actions";
+import { useActionState } from "react";
 import classes from "./page.module.css";
 
 export default function ShareMealPage() {
+  const [state, formAction] = useActionState(shareMeal, { message: null });
+
   return (
     <>
       <header className={classes.header}>
@@ -11,7 +18,7 @@ export default function ShareMealPage() {
         <p>或者拿手的個人料理！</p>
       </header>
       <main className={classes.main}>
-        <form className={classes.form}>
+        <form className={classes.form} action={formAction}>
           <div className={classes.row}>
             <p>
               <label htmlFor="name">姓名</label>
@@ -34,9 +41,11 @@ export default function ShareMealPage() {
             <label htmlFor="instructions">料理方式</label>
             <textarea id="instructions" name="instructions" rows="10" required></textarea>
           </p>
-          <ImagePicker />
+          <ImagePicker label="料理圖" name="image" />
+          {state.message && <p>{state.message}</p>}
           <p className={classes.actions}>
-            <button type="submit">分享</button>
+            {/* <button type="submit">分享</button> */}
+            <MealFormSubmission />
           </p>
         </form>
       </main>
