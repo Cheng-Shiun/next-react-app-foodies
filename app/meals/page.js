@@ -4,6 +4,11 @@ import Link from "next/link";
 import { Suspense } from "react";
 import classes from "./page.module.css";
 
+export const metadata = {
+  title: "由世界各地的美食愛好者分享的料理食譜｜跨界好食",
+  description: "瀏覽社群分享的美味餐點，每個料理皆有料理步驟可供查看，可以挑選你喜愛的學習如何料理！",
+};
+
 async function Meals() {
   const meals = await getMeals();
   return <MealsGrid meals={meals} />;
